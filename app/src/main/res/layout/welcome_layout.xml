@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WelcomeActivity"
+    android:orientation="vertical"
+    android:padding="-100000dp"
+    android:background="@drawable/nenchinh"
+    >
+
+    <ImageView
+        android:layout_width="890dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+
+        android:paddingLeft="-13dp"
+        android:src="@drawable/logochinh" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/muli_black"
+        android:text="Cửa Hàng Đồ ăn"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Chỉ cần là bạn thích - có ngay chúng tôi"
+        android:fontFamily="@font/muli"
+        android:textColor="@color/black" />
+    <LinearLayout
+        android:paddingBottom="-20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/colorPrimary"
+            android:onClick="callLoginFromWel"
+            android:transitionName="transition_login"
+
+            />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/colorPrimary"
+            android:onClick="callSignUpFromWel"
+            android:transitionName="transition_signup"/>
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@color/white"-->
+
+<!--        android:textColor="@color/black"-->
+<!--        app:backgroundTint="@color/white"-->
+<!--        style="@style/Widget.AppCompat.Button.Borderless"/>-->
+<!--    <Button-->
+<!--        android:layout_width="500dp"-->
+<!--        android:layout_height="50dp"/>-->
+</LinearLayout>
+
